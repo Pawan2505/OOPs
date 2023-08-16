@@ -1,0 +1,379 @@
+1. What is output of this program?  
+class date
+{
+	int day,month,year;
+	date()
+	{
+		day=25;
+		month=4;
+		year=2020;
+	}
+    public:
+	    void printDate()
+	    {
+		    cout<<this->day<<"-"<<this->month<<"-"<<this->year<<endl;
+	    }
+};
+int main()
+{
+	date today;
+	today.printDate();
+    return 0;
+}
+Answers
+1. Garbage value
+2. 25-4-2020
+3. Runtime error
+4. Compile time Error   ---->Ans
+=========================================================================
+2. What is  output of this program?    
+void fun(int=10,int=20,int=30);
+void fun(int, int);
+int main()
+{
+	fun(1,2);
+	return 0;
+}
+void fun(int x,int y,int z)
+{
+        cout<<endl<<x<<endl<<y<<endl<<z;
+}
+void fun(int x,int y)
+{
+	cout<<endl<<x<<endl<<y;
+}
+Answers
+1. 1  2
+2. Compile time error ----->Ans
+3. 1  2  30
+4. none of the above
+
+=================================================================
+3: What is output of following code? 
+ #include<iostream>
+using namespace std;
+int main()
+{
+	int &p;
+    int i=5;
+    cout<<”i :”<<i<<endl;
+    &p=a;  
+    p++;                            
+    cout<<”i :”<<i<<endl;
+	return 0;
+}
+Answers
+1. 5  5
+2. 5  6
+3. compile time error   ===> Ans
+4. 5 6
+===============================================================
+
+4. what is meaning of following statement? 
+#include<iostream>     
+using namespace std;   
+int main()     
+{ 
+    int &a=5;   
+  	cout<<a<<endl;  
+    return 0;
+}
+Answers
+1. 5
+2. segmentation fault
+3. Runtime error
+4. compile time error  ====> Ans
+=================================================================
+
+5. What is value of arr[3],if we wnter elements 10, 25, 45, 14 ,8,3 successively?  
+#include<iostream>
+int main( void )
+{
+	int * arr = new int[ 6 ];
+	for( int i = 0; i < 6; ++ i )
+	{
+		cout<<"Enter element	: ";
+		cin>>arr[ i ];  
+    }
+	for( int i = 0; i < 6; ++ i)
+        cout<<arr[ i ];
+	delete[] arr;
+	arr = NULL;
+	return 0;
+}
+Answers
+1. 45
+2. 14 ===> ans
+3. 25
+4. 10
+=======================================================================
+6. What will be the output of the following C++ code?    
+#include<iostream>
+using namespace std;
+int main( void )
+{
+	int num1 = 10;
+	int num2 = 20;
+	int &num3 = num1;
+	num3 = num2;
+	++ num2;
+	cout<<"Num1 : "<<num1<<endl;
+	cout<<"Num2 : "<<num2<<endl;
+	cout<<"Num3 : "<<num3<<endl;
+	return 0;
+}
+Answers
+1. Num1 : 10   Num2 : 21   Num3 : 10
+2. Compile time Error
+3. Num1 : 20   Num2 : 21   Num3 : 20   ==> ans
+4. Num1 : 10   Num2 : 21   Num3 : 20
+
+==================================================================
+
+7. What will be the output of the following C++ code?
+ #include<iostream>
+ using namespace std;
+ int main(void)
+ {
+	int &num;
+	int a=5;
+	&num=a;
+	cout<<num;
+	return 0;
+ }
+1. 5
+2. Segmentation fault
+3. Runtime error
+4. Compile time error   ==> ans
+
+================================================================
+8. What will be the output of the following C++ code?
+#include<iostream>
+using namespace std;
+int main() 
+{ 
+    int arr[2] = { 10, 20, 30, 40, 50 }; 
+    cout<<arr[1]<<endl;
+    return 0; 
+}
+Answers
+1. Compile time error   =====> Ans
+2. program will compile successfully but give one warning
+3. 20
+4. Both B and C
+==============================================================================
+9. What will be the output of the following C++ code?
+ #include<iostream>
+ using namespace std;
+ 
+ class Point {
+ public:
+    Point() 
+    { 
+      cout << "Normal Constructor called"<<endl; 
+    }
+    Point(const Point &t) 
+    { 
+       cout << "Copy constructor called"<<endl; 
+    }
+ };
+ 
+ int main()
+ {
+   Point *t1, *t2;
+   t1 = new Point();
+   t2 = new Point(*t1);
+   Point t3 = *t1;
+   Point t4;
+   t4 = t3;
+   return 0;
+ }
+Answers
+1. Normal Constructor called    Copy Constructor called    Copy Constructor called    Normal Constructor called  ===> ans
+2. Normal Constructor called    Normal Constructor called    Normal Constructor called    Copy Constructor called    Copy Constructor called    Normal Constructor called    Copy Constructor called
+3. Normal Constructor called    Copy Constructor called    Copy Constructor called    Normal Constructor called    Copy Constructor called
+4. None of the above
+==========================================================================
+10. What will be the output of the following C++ code?
+#include<iostream>
+using namespace std;
+class Point
+{
+    int x;
+public:
+    Point(int x)
+	{
+    	this->x = x;
+	}
+    Point(const Point p)
+    {
+    	x = p.x;
+    }
+    int getX()
+    {
+    	return x;
+    }
+};
+int main()
+{
+   Point p1(10);
+   Point p2 = p1;
+   cout << p2.getX();
+   return 0;
+}
+Answers
+1. Compiler Error: p must be passed by reference  ====>  Ans
+2. Garbage value
+3. 10
+4. None of the above
+=======================================================================
+Q.11 What will be the output of the following program?
+#include <iostream>
+using namespace std;
+class Program{
+    int id;
+    static int count;
+public:
+    Program() {
+        count++;
+        id = count;
+        cout << "constructor for id " << id << endl;
+    }
+    ~Program() {
+        cout << "destructor for id " << id << endl;
+    }
+};
+int Program::count = 0; //Global Definition
+int main() {
+    Program a[3];
+    return 0;
+} 
+A. constructor for id 1 constructor for id 2 constructor for id 3 destructor for id 3 destructor for id 2 destructor for id 1
+B. constructor for id 1 constructor for id 2 constructor for id 3 destructor for id 1 destructor for id 2 destructor for id 3
+C. Compiler Dependent
+D. constructor for id 1
+Correct Answer : A
+====================================================================================
+Q.12 What will be the output of the following program?
+#include <iostream>
+using namespace std;
+class Program{
+    static int x; 
+public:
+    static void Set(int xx){
+        x = xx; 
+    }
+    void Display() {
+        cout<< x ;
+    }
+};
+int Program::x = 0; 
+int main()
+{
+    Program::Set(33);
+    Program::Display();
+    return 0; 
+}
+A. The program will print the output 0.
+B. The program will print the output 33.
+C. The program will print the output Garbage.
+D. The program will report compile time error.
+Correct Answer : D
+====================================================================================
+Q.13 What is the output of following code
+#include<iostream>
+using namespace std;
+void print( int x ){
+    cout<<"int  :   "<<x<<endl;
+}
+void print( int &x ){
+    cout<<"int&  :   "<<x<<endl;
+}
+int main( void ){
+    print( 10 );
+    return 0;
+}
+A. int : 10
+B. int& : 10
+C. Ambiguity error
+D. Redefinition error
+Correct Answer : A
+==============================================================================
+Q.14:Which Feature of OOP illustrated the code reusability?
+a) Polymorphism
+b) Abstraction
+c) Encapsulation
+d) Inheritance
+Answer : D
+===============================================================
+Q.15: Which feature can be implemented using encapsulation?
+a) Inheritance
+b) Abstraction
+c) Polymorphism
+d) Overloading
+Answer : B
+===========================================================================
+Q.16 Which one of the following do not represent compile time polymorphism?
+A. Function Overloading
+B. Operator Overloading
+C. Function Overriding
+D. Template
+Correct Answer : C
+========================================================================
+Q.17 _______ operator is designed to use with cin.
+A. <
+B. <<
+C. >>
+D. >
+Correct Answer : C
+==============================================================================
+Q.18 Select the correct statement about class.
+A. State, bahavior and identity are charactericts of class.
+B. Class represents structure and behavior of the object.
+C. Class get space inside memory.
+D. By default, access specifier of the class is public.
+Correct Answer : B
+===============================================================================
+Q.19 Which of the following function get this pointer
+A. Global function
+B. Static member function
+C. Constant member function
+D. Friend function
+Correct Answer : C
+============================================================================
+Q.20 _________ is called when an already created object is assigned to another already created object.
+A. Copy Constructor
+B. Default Constructor
+C. Assignment operator
+D. parameterless Constructor 
+ANSWER: C
+================================================================
+Q.21:By default how the value are passed in c++?
+a) call by value
+b) call by reference
+c) call by pointer
+d) call by object
+Correct Answer :a
+==========================================================
+Q.22: What is the output of following code
+#include<iostream>
+using namespace std;
+void SWAP(int &n1, int n2)
+{
+    n1=n1*n2;
+    n2=n1/n2;
+    n1=n1/n2;   
+}
+int main()
+{
+    int no1=-1, no2=-2;
+    cout<<" no1="<<no1<<" no2="<<no2<<endl;
+    SWAP(no1, no2);
+    cout<<" no1="<<no1<<" no2="<<no2<<endl;
+    return 0; 
+}
+Answers
+1. no1=-1 no2=-2    no1=-2 no2=-2  ===> Ans
+2. no1=-1 no2=-2    no1=-2 no2=-1
+3. no1=-1 no2=-2    no1=-1 no2=-2
+4. no1=-1 no2=-2    no1=-1 no2=-1

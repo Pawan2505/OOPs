@@ -1,0 +1,60 @@
+DAY3 : Poll Questions
+
+
+Q.1 : Which among the following describes a destructor?
+A: A special function that is called to free the resources, acquired by the object.
+B: A special function that is called to delete the class.
+C: A special function that is called anytime to delete an object.
+D: A special function that is called to delete all the objects of a class.
+Answer : A
+
+Q.2 : What is the role of a constructor in classes?
+A: To modify the data whenever required
+B: To destroy an object
+C: To initialize the data members of an object when it is created
+D: To call private functions from the outer world
+Answer : C
+
+Q.3 : What is the general syntax for accessing the namespace variable?
+A: namespace::operator
+B: namespace,operator
+C: namespace#operator
+D: namespace$operator
+Answer : A
+
+Q.4 : What is syntax of defining a destructor of class A? 
+A: A(){} 
+B: ~A(){} 
+C: A::A(){} 
+D: ~A(){}; 
+Answer : B
+
+Q.5 : Which keyword is used to access the variable in the namespace?
+A: using
+B: dynamic
+C: const
+D: static
+Answer : A
+
+Q.6 : What are the constant member functions?
+A: Functions which doesn’t change value of calling object
+B: Functions which doesn’t change value of any object inside definition
+C: Functions which doesn’t allow modification of any object of class
+D: Functions which doesn’t allow modification of argument object
+Answer : A
+
+Q.7 : Select the wrong statement about namespace.
+A: We can define namespace as File scope.
+B: We can define namespace at namespace scope.
+C: we can define main function inside namespace.
+D: we can not define namespace inside function.
+Answer : C
+
+Q.8 : Select the correct statement about class.
+A. State, bahavior and identity are charactericts of class.
+B. Class represents structure and behavior of the object.
+C. Class get space inside memory.
+D. By default, access specifier of the class is Public.
+Correct Answer : B
+
+

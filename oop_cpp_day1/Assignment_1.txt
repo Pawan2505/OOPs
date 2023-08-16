@@ -1,0 +1,31 @@
+
+
+
+1>Write a .c file having a employee struct contains
+empID,empName,empSalary,and two function AcceptData and 
+printEmpData . and call these function in main()
+
+2> Write a .cpp file having a employee struct contains
+empID,empName,empSalary,and two function AcceptData and 
+printEmpData . and call these function in main()
+
+//function overloading
+3) write a function 'Add' which is able to add 
+3 int value and 1 float value 
+2 int value and 2 float value ,
+1 int value and 3 float value,
+4 int value ,
+4 float value,
+1 char value and 3 float value.
+
+//default argument
+4> write a function that has the default values for multiple parameters. 
+Call the function where the parameters will use the default values 
+and where the values will be passed to
+ the function.
+
+//inline functiom
+5> Write a inline function to calculate area of triangle.
+Input base and Height from user and print the result.
+
+ 

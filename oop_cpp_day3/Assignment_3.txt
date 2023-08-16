@@ -1,0 +1,43 @@
+
+
+
+Q1: Convert account class using cin and cout
+
+------------------------------------------------
+Q2: Update TDate class
+
+i> Add setter and getter for day ,month and year
+ii> update PrintDate() function using cout
+iii> update AcceptDate() function using cin,cout
+
+----------------------------------------------------------------
+Q3 :Write a class of  cylinder using following members
+
+Data members:
+	height,radius,volume
+member function:
+cylinder()
+cylinder(height,radius)
+setHeight(int h)
+setRadius(int r)
+getHeight()
+getRadius()
+CalculateVolume();
+getVolume()
+
+--------------------------------------------
+Q4: 
+
+Assignment Program namespace
+Define one namespace ‘na’ having one data member num1. Define one global function display_num() access num1 using namespace na. Inside main call display_num() function using scope resolution operator(::).
+declare one global variable and one variable in main having same name, and try to access local variable and global variable (::)
+Declare one variable in namespace and access thru main.
+Define two namespace having different variables defined and access thru main.
+Program to demonstrate global variable and using nested name space
+Create first namespace N1 (int n1,int n2) second namespace N2(int n1; Nested Namespace N3 int n3;) and declare one local variable to main n1 and access all members of namespace through main.
+n1,&n1 (local)
+::n1,&::n1 (global)
+N1::n1, &N1::n1 (from namespace N1)
+N1::n2, &N1::n2 (from namespace N1)
+N2::n1, &N2::n1
+ N2::N3::n3, &N2::N3::n3

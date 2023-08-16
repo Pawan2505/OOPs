@@ -1,0 +1,61 @@
+DAY1 : Poll Questions
+
+
+
+Q.1 An inline function is expanded during ______________
+A. compile-time
+B. run-time
+C. never expanded
+D. end of the program
+Correct Answer : A
+
+Q.2 C++ is developed by__________.
+A. Alan Kay.
+B. Bjarne Stroustrup.
+C. James Gosling.
+D. Brian Karnighan.
+Correct Answer : B
+
+Q.3 C++ is invented in year _________.
+A. 1972
+B. 1979
+C. 1983
+D. 1998
+Correct Answer : B
+
+Q.4 Which one of the following data type is introduced in C++.
+A. void
+B. char
+C. bool
+D. wchar
+Correct Answer : C
+
+Q.5 Which of the following is a properly defined structure?
+A. struct {int a;}
+B. struct a_struct {int a;}
+C. struct a_struct int a;
+D. struct a_struct {int a;};
+Correct Answer : D
+
+Q.6 Private and public are known as  ____________ in cpp.
+A. Accessors
+B. Access Specifier
+C. visibility Manipulator
+D. Manipulator
+Correct Answer : B
+
+Q.7. Which among the following function can be called without arguments?
+A. void add(int x, int y=0)
+B. void add(int=0)
+C. void add(int x=0, int y=0)
+D. void add(char c)
+Correct Answer : C
+
+
+
+
+
+
+
+
+

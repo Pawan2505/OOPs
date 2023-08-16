@@ -1,0 +1,44 @@
+Question 1:
+
+Create a cpp class named as Artist having 
+data member 
+		name , rating (3 ,4) , country 
+member function 
+		acceptArtistData()
+		printArtistData()
+		bool isFamous() --> [if rating is 1/2 then not 	Famous ], [if rating is 3/4 then Famous Artist  ]
+
+
+
+
+Create a cpp class named as painter derived from Artist  class having 
+data member 
+		string type [decorative, commercial]
+		PaintingRate [500 per Painting]
+		number of Painting.
+
+member function 
+		acceptPainterData()
+		printPainterData()
+		calcuteTotalIncome()
+Ex( M_F_Husain , 2 ,India,  commercial, 50000, 250)
+
+
+
+
+Create a cpp class named as singer derived from Artist  class having 
+data member 
+		number of album 
+		RatePerSong [1000 per song]
+member function 
+		acceptsingerData()
+		printsingerData()
+		calcuteTotalIncome()
+Ex( Michael Jackson, 4 , American ,  70000, 1350)
+
+
+
+
+
+
+

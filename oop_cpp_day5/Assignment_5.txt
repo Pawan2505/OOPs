@@ -1,0 +1,22 @@
+Question 1: create TDate class having data members day ,month , year and following functions
+
+	AcceptDate();
+	PrintDate();
+
+Create a class Person having  data member as name , age , date_of_birth and following functions.
+
+	AcceptPersonData();
+	PrintPersonData();
+
+-------------------------------------------------------------
+
+Question 2: 
+create Address class having data members cityName ,stateName , Pincode and following functions
+
+	AcceptAddress ();
+	PrintAddress ();
+
+Create a class Student having  data member as name , courseName , Home-address and following functions.
+	
+	AcceptStudentData();
+	PrintStudentData();

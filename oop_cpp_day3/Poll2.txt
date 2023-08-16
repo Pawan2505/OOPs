@@ -1,0 +1,54 @@
+DAY2 : Poll Questions
+
+
+Q.1 Which of the following is a valid class declaration?
+a) class A { int x; };
+b) class B { }
+c) public class A { }
+d) object A { int x; };
+Answer : A
+
+
+Q.2 The data members and functions of a class in C++ are by default ____________
+a) protected
+b) private
+c) public
+d) public & protected
+Answer : B
+
+
+Q.3 Which of the following gets called when an object is being created?
+A. Constructor
+B. Glogal Function
+C. Destructor
+D. Main Function
+Answer :A
+
+Q.4 Like constructors, can there be more than one destructors in a class?
+A. Yes
+B. No
+C. May Be
+D. Can't Say
+Answer :B
+
+Q.5 How constructors are different from other member functions of the class?
+a) Constructor has the same name as the class itself
+b) Constructors do not return anything
+c) Constructors are automatically called when an object is created
+d) All of the mentioned
+Answer : D
+
+Q.6 this pointer is_______ & Passed _______
+a) nonconstant & externally
+b) constant & externally
+c) constant & internally
+d) nonconstant & internally
+Answer : C
+
+
+
+
+
+
+
+

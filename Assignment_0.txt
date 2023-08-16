@@ -1,0 +1,27 @@
+
+
+Question 1:
+Define a struct in C for bank account information details
+struct members
+	name,
+	acountnumber,
+	acounttype,  [saving/loan/ppf/nps]
+	balance  [minimun balance = 1000]
+functions
+	AcceptData()
+	Deposit(int amount)
+	Withdraw(int amount)
+	Display()
+in main function test the functionality by using menu driven code
+------------------------------------------------------------
+Question 2:
+
+Define a struct in C for to save time 
+struct members
+
+Time struct
+int hr,min,sec
+initTime()    ->0:0:0
+acceptTime() 
+DisplayTime()  ->-> 9:7:24 
+increamentTimeBy1Sec()

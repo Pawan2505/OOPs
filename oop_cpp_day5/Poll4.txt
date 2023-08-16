@@ -1,0 +1,55 @@
+DAY4 : Poll Questions
+
+
+Q.1 _______ operator is designed to use with cin.
+A. <
+B. <<
+C. >>
+D. >
+Correct Answer : C
+
+Q.2 ________ is standard namespace in C++.
+A. global namespace
+B. std namespace
+C. default namespace
+D. system namespace
+Correct Answer : B
+
+Q.3: Pick the correct statement about references in C++.
+a) References stores the address of variables
+b) References and variables both have the same address
+c) References use dereferencing operator(*) to access the value of variable its referencing
+d) References were also available in C
+Correct Answer : b
+
+Q.4 By default how the value are passed in c++? 
+a) call by value 
+b) call by reference 
+c) call by pointer 
+d) call by object 
+Correct Answer :a
+
+
+Q.5 How are the constants declared? 
+a) const keyword 
+b) #define preprocessor 
+c) both const keyword and #define preprocessor 
+d) $define 
+Correct Answer :=a
+
+
+Inside constant member function, if we want to modify state of non constant data member then we should use _______ keyword?
+A. static
+B. immutable
+C. mutable
+D. mutator
+Correct Answer : C
+
+
+
+
+
+
+
+
+
